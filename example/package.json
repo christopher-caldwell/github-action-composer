@@ -1,0 +1,7 @@
+{
+  "name": "@caldwell619/github-action-composer-example",
+  "private": true,
+  "dependencies": {
+    "@caldwell619/github-action-composer": "link:../"
+  }
+}
