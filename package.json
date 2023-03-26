@@ -30,6 +30,8 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "walkjs": "^4.0.5",
+    "yaml": "^2.2.1",
     "yargs": "^17.7.1"
   }
 }
