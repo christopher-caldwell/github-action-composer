@@ -519,6 +519,13 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+clipanion@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/clipanion/-/clipanion-3.2.0.tgz#ea55ce3fe27becb4ddd4915df6fb3de0f9e79a5c"
+  integrity sha512-XaPQiJQZKbyaaDbv5yR/cAt/ORfZfENkr4wGQj+Go/Uf/65ofTQBCPirgWFeJctZW24V3mxrFiEnEmqBflrJYA==
+  dependencies:
+    typanion "^3.8.0"
+
 cliui@^7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
@@ -2177,6 +2184,11 @@ tsutils@^3.21.0:
   integrity sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==
   dependencies:
     tslib "^1.8.1"
+
+typanion@^3.8.0:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/typanion/-/typanion-3.12.1.tgz#d33deb130aba23ef6f2a3c69e7fb28148dd9089a"
+  integrity sha512-3SJF/czpzqq6G3lprGFLa6ps12yb1uQ1EmitNnep2fDMNh1aO/Zbq9sWY+3lem0zYb2oHJnQWyabTGUZ+L1ScQ==
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"

@@ -3,7 +3,7 @@ import esbuild from 'esbuild'
 const build = async () => {
   try {
     await esbuild.build({
-      entryPoints: ['src/index.ts', 'src/helpers.ts', 'src/cli.ts'],
+      entryPoints: ['src/index.ts'],
       outdir: 'dist',
       bundle: false,
       minify: true,
