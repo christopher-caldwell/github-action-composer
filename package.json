@@ -12,10 +12,10 @@
     "publish:version": "sh scripts/publish.sh"
   },
   "files": [
-    "dist"
+    "dist/*.js",
+    "dist/*.ts"
   ],
   "main": "dist/index.js",
-  "bin": "dist/bin.js",
   "devDependencies": {
     "@types/node": "^16.10.3",
     "@types/yargs": "^17.0.23",
@@ -30,9 +30,7 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "clipanion": "^3.2.0",
     "walkjs": "^4.0.5",
-    "yaml": "^2.2.1",
-    "yargs": "^17.7.1"
+    "yaml": "^2.2.1"
   }
 }

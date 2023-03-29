@@ -27,14 +27,4 @@ if [ $? != 0 ]; then
   exit 1
 fi
 
-printf "\n\n$BICyan$(echo Building artifact)$Color_Off"
-printf "\n\n"
-
-yarn ts-node esbuild.config.ts
-
-if [ $? != 0 ]; then
-  printf "\n\n$Red$(echo Build failed.)$Color_Off"
-  exit 1
-fi
-
-cp bin/bin.js dist/
+# cp bin/bin.js dist/

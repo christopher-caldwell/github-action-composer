@@ -44,3 +44,4 @@ export interface Action {
   on: ActionTriggerConfig
   jobs: Record<string, Job>
 }
+export const esbuildIsKindaLacking = ''

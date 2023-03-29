@@ -26,4 +26,4 @@ Composer.addStep(job, {
 Composer.addStep(job, {
   run: 'npx nx affected --target=test --parallel=3 --configuration=ci',
 })
-Composer.compileAction('./.github/workflows/ci_output.yml')
+Composer.compileAction('./.example-output/workflows/ci_output.yml')

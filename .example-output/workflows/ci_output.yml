@@ -1,31 +1,23 @@
 name: Code Quality
-
 on:
   pull_request:
     branches:
       - staging
-env:
-  NX_HEAD: ${{ github.event.pull_request.head.sha }}
-  NX_BASE: ${{ github.event.pull_request.base.sha }}
 jobs:
-  main:
+  code_quality:
     runs-on: ubuntu-latest
     steps:
-      # Setup
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: "yarn"
-      # Deps
+          cache: yarn
       - name: Authenticate with private NPM package
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Install Packages
         run: yarn --prefer-offline --frozen-lockfile
-
-      # Checks
       - run: npx nx format:check
       - run: npx nx affected --target=lint --parallel=3
       - run: npx nx affected --target=type-check --parallel=3
